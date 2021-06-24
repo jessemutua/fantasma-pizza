@@ -1,0 +1,8 @@
+.title {
+    text-align: center;
+    font: bolder;
+    font-feature-settings: "aalt";
+    font-size: larger;
+    color: black;
+    padding: 50px;
+}
