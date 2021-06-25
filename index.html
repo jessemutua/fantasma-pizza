@@ -79,20 +79,23 @@
                                     <option value="classic">Classic</option>
                                     <option value="italian">itallian</option>
                                 </select>
-                                <label>Choose preffered size:</label>
+                                <!-- <label>Choose preffered size:</label> -->
                                 <select class="form-select" aria-label="Default select example">
+                                    <option value="flavors">select you favourite flavour</option>
                                     <option value="small">small</option>
                                     <option value="medium">medium</option>
                                     <option value="large">large</option>
                                 </select>
-                                <label>select your prefferd crust:</label>
+                                <!-- <label>select your prefferd crust:</label> -->
                                 <select class="form-select" aria-label="Default select example">
+                                    <option value="crusts">Select your favourite crust</option>
                                     <option value="thin">Thin @ksh1 00</option>
                                     <option value="custom">custom @ksh 150</option>
                                     <option value="flat">flat @ksh 200</option>
                                 </select>
-                                <label>select your preffered toppings</label>
+                                <!-- <label>select your preffered toppings</label> -->
                                 <select class="form-select" aria-label="Default select example">
+                                    <option value="toppings">Select ypur preffered topping</option>
                                     <option value="topping1">Gorgonzola and mushroom @ksh 30</option>
                                     <option value="topping2">pancetta/speck/bacon@ksh 30.</option>
                                     <option value="topping3">capsicum @ksh 30.</option>
@@ -105,15 +108,31 @@
                                 </select>
 
                                 <label for="number">Number of pizzas</label>
-                                <input type="number" class="form-contol" id="number" placeholder="Number of pizzas" min="1" required>
+                                <input type="number" class="form-contol" id="number" placeholder="Number of pizzas" min="1" max="100" required>
 
 
 
                             </form>
+                            <a href="#summary">
+                                <button type="submit" class="btn btn-primary checkout" id="checkout">Checkout
+
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="order-preview" id="order-sum">
+                                <h2 class="text-centre" id="summary">order-preview</h2>
+                                <h3 class="text-center summary">Hey, please confirm your order</h3>
+                                <ol class="text-centre col-md-6 sum" id="list"></ol>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
