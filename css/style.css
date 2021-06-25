@@ -46,8 +46,12 @@
     display: none;
 }
 
+.summary {
+    display: none;
+}
+
 .card-footer {
-    text-align: center;
+    text-align: left;
     font: bolder;
     font-size: 20px;
     background-color: teal;
@@ -68,5 +72,32 @@
 }
 
 .mobile {
-    float: left
+    margin: 0%;
+    padding: 0%;
+}
+
+.fant {
+    text-align: center;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.click-me,
+button[type=submit],
+.deliver,
+.dondeliver {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: ruby-base-container;
+    letter-spacing: 2px;
+    background-color: red;
+    outline: none;
+    padding: 12.5px 13px;
+    border: none;
+    border-radius: 50px;
+    font: size 5%;
+    ;
 }
