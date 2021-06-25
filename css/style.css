@@ -41,3 +41,28 @@
     text-align: center;
     color: red;
 }
+
+#delinfo {
+    display: none;
+}
+
+.about {
+    text-align: center;
+    color: red;
+    font: bolder;
+    font-size: 20px;
+}
+
+.h2 {
+    color: darkblue;
+    font-size: 10px;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.orders {
+    background-image: url("../pizzas/download\(7\).jpeg");
+}
+
+.col {
+    color: darkgoldenrod;
+}
