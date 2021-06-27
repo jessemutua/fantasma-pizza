@@ -249,6 +249,17 @@ $(document).ready(function() {
         $('.summary').slideUp();
         $('#list').slideUp();
         $('.summary').text("Please provide your lacation details").slideDown();
-        $('.deliver').hide(1000)
+        $('.deliver').hide(1000);
+        $('.dondeliver').hide(1000);
+        $('.consdata').slideDown();
+    })
+    $('.dondeliver').click(function() {
+
+    });
+});
+$(document).ready(function() {
+    $('#delinfo').submit(function() {
+        var name = $("input#name").val();
+        var
     })
 })
