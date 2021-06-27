@@ -232,10 +232,23 @@ $(document).ready(function() {
             case topping = "topping3":
                 sumPrice = sumPrice + 90;
                 break;
-            case
+            case topping = "topping4":
+                sumPrice = sumPrice + 100;
 
 
         }
-
+        let totalOrder = order(flavour, size, crust, topping, number, sumPrice)
+        console.log(totalOrder);
+        $('.summary').slideDown(2000);
+        $('.consdata').slideUp();
+        $('#list').slideDown();
+        $('.deliver').show(1000);
+        $('.dondeliver').show(1000);
+    });
+    $(".deliver").click(function() {
+        $('.summary').slideUp();
+        $('#list').slideUp();
+        $('.summary').text("Please provide your lacation details").slideDown();
+        $('.deliver').hide(1000)
     })
 })
