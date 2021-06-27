@@ -90,6 +90,150 @@ $(document).ready(function() {
                         }
                         break;
                 }
+                break;
+            case flavour = "Beef":
+                switch (size) {
+                    case size = "small":
+                        price = 450
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 30;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flat-bed") {
+                            sumPrice = (price * number) + 60;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 70;
+                        }
+                        break;
+
+                    case size = "medium":
+                        price = 700;
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 30;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flay-bed") {
+                            sumPrice = (price * number) + 60;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 70;
+                        }
+                        break;
+
+                    case size = "large":
+                        price = 1300;
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 40;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flat-bed") {
+                            sumPrice = (price * number) + 70;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 80;
+                        }
+                        break;
+                }
+                break;
+            case flavour = "hawaiian":
+                switch (size) {
+                    case size = "small":
+                        price = 500;
+
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 40;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flat-bed") {
+                            sumPrice = (price * number) + 70;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 80;
+                        }
+                        break;
+
+
+                    case size = "large":
+                        price = 1300;
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 40;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flat-bed") {
+                            sumPrice = (price * number) + 70;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 80;
+                        }
+                        break;
+
+                    case size = "medium":
+                        price = 700;
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 30;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flay-bed") {
+                            sumPrice = (price * number) + 60;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 70;
+                        }
+                        break;
+
+                }
+                break;
+            case flavour = "itallian":
+                switch (size) {
+                    case size = "small":
+                        price = 600;
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 30;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flay-bed") {
+                            sumPrice = (price * number) + 60;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 70;
+                        }
+                        break;
+
+                    case size = "large":
+                        price = 1300;
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 40;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flat-bed") {
+                            sumPrice = (price * number) + 70;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 80;
+                        }
+                        break;
+
+                    case size = "medium":
+                        price = 700;
+                        if (crust === "thin") {
+                            sumPrice = (price * number) + 30;
+                        } else if (crust === "custom") {
+                            sumPrice = (price * number) + 50;
+                        } else if (crust === "flay-bed") {
+                            sumPrice = (price * number) + 60;
+                        } else if (crust === "thick") {
+                            sumPrice = (price * number) + 70;
+                        }
+                        break;
+
+                }
+                break;
+        }
+        switch (topping) {
+            case topping = "topping1":
+                sumPrice = sumPrice + 50;
+                break;
+            case topping = "topping2":
+                sumPrice = sumPrice + 70;
+                break;
+            case topping = "topping3":
+                sumPrice = sumPrice + 90;
+                break;
+            case
+
 
         }
 

@@ -67,7 +67,7 @@
                         <div class="col-sm-2"></div>
                         <div class="col-sm-8 order-overlay text-center">
                             <form class="col-sm-6 offset-sm-3 text-center">
-                                <select class="form-select" aria-label="Default select example flavour"> 
+                                <select class="form-select" aria-label="Default select example flavour" id="flavour"> 
                                     <option value="flavors">flavors</option>
                                     <option value="chicken">Chicken</option>
                                     <option value="veg">vegetable</option>
@@ -83,7 +83,7 @@
                                     <option value="large">large</option>
                                 </select>
                                 <!-- <label>select your prefferd crust:</label> -->
-                                <select class="form-select" aria-label="Default select example crust">
+                                <select class="form-select" aria-label="Default select example crust" id="crust">
                                     <option value="crusts">Select your favourite crust</option>
                                     <option value="thin">Thin @ksh30</option>
                                     <option value="custom">custom @ksh 50</option>
@@ -91,11 +91,12 @@
                                     <option value="Thick">custom @ksh 70</option>
                                     
                                 </select>
-                                <!-- <label>select your preffered toppings</label> -->
-                                <select class="form-select" aria-label="Default select example topping">
-                                    <option value="topping3">radicchio</option>
-                                    <option value="topping3">Broccolini</option>
-                                    <option value="topping3">pancetta/speck/bacons</option>
+                                <label>select your preffered toppings</label>
+                                <select class="form-select" aria-label="Default select example topping" id="topping">
+                                    <option value="topping1">radicchio @ksh 50</option>
+                                    <option value="topping2">broccolini @ksh 70</option>
+                                    <option value="topping3">tomatto @ksh 90</option>
+                                    <option value="topping4">pancetta @ksh 100</option>
                                 </select>
 
                                 <label for="number"></label>
@@ -123,7 +124,9 @@
                 <div class="order-preview" id="order-sum">
                     <h2 class="text-centre summary" id="summary">order-preview</h2>
                     <h3 class="text-center summary">Hey, please confirm your order;</h3>
-                    <ol class="text-centre col-md-6 sum" id="list"></ol>
+                    <ol class="text-centre col-md-6 sum" id="list">
+
+                    </ol>
 
                 </div>
             </div>
@@ -146,7 +149,7 @@
     <BR></BR>
     <BR></BR>
     <BR></BR>
-    <div class="container-fluid">
+    <div class="consdata container-fluid">
         <div class="info row">
             <div class="col-md-6">
                 <form action="" class="form-group col-md-6" id="delinfo">
