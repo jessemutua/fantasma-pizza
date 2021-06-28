@@ -102,6 +102,12 @@ button[type=submit],
     font-family: fantasy;
 }
 
-.info {
-    text-align: center;
+.delinfo {
+    margin-top: -14rem;
+    display: none;
 }
+
+
+/* #delivery {
+    display: none;
+} */

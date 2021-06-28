@@ -1,11 +1,3 @@
-$(function() {
-    $('#delinfo').hide();
-    $('.consdata').hide();
-    $('#summary').hide();
-})
-
-
-
 $(document).ready(function() {
     $("#checkout").click(function() {
         let flavour = $(".flavour option:selected").val();
@@ -254,22 +246,29 @@ $(document).ready(function() {
         $('.dondeliver').show(1000);
 
 
-        $('#list').text(" ");
-        $("#list").append("<br>" + "Flavour :   " + totalOrder.f + "<br>" + "Size :   " +
-            totalOrder.s + "<br>" + "Crust :     " +
-            totalOrder.c + "<br>" + "Toppings :     " +
-            totalOrder.t + "<br>" + " Number of pizzas :    " +
-            totalOrder.n + "<br>" + "Total Price :  " +
-            totalOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px')
+        $('#checkout').click(function() {
+            // $("#list").append("<br>" + "Flavour :   " + totalOrder.f + "<br>" + "Size :   " +
+            //     totalOrder.s + "<br>" + "Crust :     " +
+            //     totalOrder.c + "<br>" + "Toppings :     " +
+            //     totalOrder.t + "<br>" + " Number of pizzas :    " +
+            //     totalOrder.n + "<br>" + "Total Price :  " +
+            //     totalOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', 
+            // '24px')
+            console.log('checkout')
+        });
+
     });
+
+
+
     $(".deliver").click(function() {
         $('#summary').slideDown();
         $('#list').slideDown();
         $('.deliver').hide(1000);
         $('.dondeliver').hide(1000);
-        $('#delinfo').slideDown();
-        $('#summary').hide();
-    })
+        $('.delinfo').show();
+
+    });
     $('.dondeliver').click(function() {
 
     });
