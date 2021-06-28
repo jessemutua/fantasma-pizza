@@ -42,14 +42,6 @@
     color: red;
 }
 
-#delinfo {
-    display: none;
-}
-
-.summary {
-    display: none;
-}
-
 .card-footer {
     text-align: left;
     font: bolder;

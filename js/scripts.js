@@ -1,3 +1,11 @@
+$(function() {
+    $('.delinfo').hide();
+    $('consdata').hide();
+    $('#order-sum').hide();
+})
+
+
+
 $(document).ready(function() {
     $("#checkout").click(function() {
         let flavour = $(".flavour option:selected").val();
@@ -7,8 +15,8 @@ $(document).ready(function() {
         let crust = $(".crust option:select").val();
         console.log(size, flavour, number, topping, crust);
 
-        let order = (f, s, n, t, c, sum) => {
-            return { f, s, n, t, c, sum };
+        let order = (f, s, n, t, c, total) => {
+            return { f, s, n, t, c, total };
         };
         let price, sumPrice;
         switch (flavor) {
@@ -71,7 +79,7 @@ $(document).ready(function() {
                             sumPrice = (price * number) + 30;
                         } else if (crust === "custom") {
                             sumPrice = (price * number) + 50;
-                        } else if (crust === "flay-bed") {
+                        } else if (crust === "flat-bed") {
                             sumPrice = (price * number) + 60;
                         } else if (crust === "thick") {
                             sumPrice = (price * number) + 70;
@@ -239,19 +247,28 @@ $(document).ready(function() {
         }
         let totalOrder = order(flavour, size, crust, topping, number, sumPrice)
         console.log(totalOrder);
-        $('.summary').slideDown(2000);
+        $('.order-prev').slideDown(2000);
         $('.consdata').slideUp();
         $('#list').slideDown();
         $('.deliver').show(1000);
         $('.dondeliver').show(1000);
+
+
+        $('#list').text(" ");
+        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   " +
+            newOrder.s + "<br>" + "Crust :     " +
+            newOrder.c + "<br>" + "Toppings :     " +
+            newOrder.t + "<br>" + " Number of pizzas :    " +
+            newOrder.n + "<br>" + "Total Price :  " +
+            newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px')
     });
     $(".deliver").click(function() {
-        $('.summary').slideUp();
-        $('#list').slideUp();
-        $('.summary').text("Please provide your lacation details").slideDown();
+        $('.order-sum').slideUp();
+        $('#list').slideDown();
+        $('.order-sum').show();
         $('.deliver').hide(1000);
         $('.dondeliver').hide(1000);
-        $('.consdata').slideDown();
+        $('.consdata').show();
     })
     $('.dondeliver').click(function() {
 
@@ -260,6 +277,11 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#delinfo').submit(function() {
         var name = $("input#name").val();
-        var
-    })
-})
+        var lacation = $("input#location").val();
+        var phone_number = $("input#phone").val();
+
+        alert("Hello" + name + ",your order has successfully been placed and will be delivered to" +
+            location + "shortly.Thank you for choosing Fantasma");
+
+    });
+});
