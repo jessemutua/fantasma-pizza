@@ -1,7 +1,7 @@
 $(function() {
-    $('.delinfo').hide();
-    $('consdata').hide();
-    $('#order-sum').hide();
+    $('#delinfo').hide();
+    $('.consdata').hide();
+    $('#summary').hide();
 })
 
 
@@ -255,20 +255,20 @@ $(document).ready(function() {
 
 
         $('#list').text(" ");
-        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   " +
-            newOrder.s + "<br>" + "Crust :     " +
-            newOrder.c + "<br>" + "Toppings :     " +
-            newOrder.t + "<br>" + " Number of pizzas :    " +
-            newOrder.n + "<br>" + "Total Price :  " +
-            newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px')
+        $("#list").append("<br>" + "Flavour :   " + totalOrder.f + "<br>" + "Size :   " +
+            totalOrder.s + "<br>" + "Crust :     " +
+            totalOrder.c + "<br>" + "Toppings :     " +
+            totalOrder.t + "<br>" + " Number of pizzas :    " +
+            totalOrder.n + "<br>" + "Total Price :  " +
+            totalOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px')
     });
     $(".deliver").click(function() {
-        $('.order-sum').slideUp();
+        $('#summary').slideDown();
         $('#list').slideDown();
-        $('.order-sum').show();
         $('.deliver').hide(1000);
         $('.dondeliver').hide(1000);
-        $('.consdata').show();
+        $('#delinfo').slideDown();
+        $('#summary').hide();
     })
     $('.dondeliver').click(function() {
 
@@ -277,11 +277,11 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#delinfo').submit(function() {
         var name = $("input#name").val();
-        var lacation = $("input#location").val();
-        var phone_number = $("input#phone").val();
+        var location = $("input#location").val();
+        var number = $("input#phone").val();
 
-        alert("Hello" + name + ",your order has successfully been placed and will be delivered to" +
-            location + "shortly.Thank you for choosing Fantasma");
+        alert("Hello," + " " + name + " " + "your order has successfully been placed and will be delivered" +
+            " " + location + " " + "shortly.Thank you for choosing Fantasma and have yourself a wonderful day.");
 
     });
 });

@@ -101,3 +101,7 @@ button[type=submit],
     font-size: small;
     font-family: fantasy;
 }
+
+.info {
+    text-align: center;
+}
