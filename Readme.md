@@ -1,5 +1,5 @@
 # FATASMA PIZZA
-    THis project is about a web for a online pizza store known Fantasma pizza
+    THis project is about a web app for a online pizza store known Fantasma pizza
 ## Authors information.
      Jesse Mutua
 
@@ -19,6 +19,7 @@
 
 ### Contact information.
     To reach me email jm@76.gmail.com
+    JesseMutua5 @twitter
     
 
 ####   LICENSE
